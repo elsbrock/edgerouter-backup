@@ -20,7 +20,7 @@ fi
 if [ ! -x "$GOGHWRITE_BIN" ];
 then
   mkdir -p $(dirname $GOGHWRITE_BIN)
-  curl -Ls https://github.com/elsbrock/go-ghwrite/releases/latest/download/go-ghwrite_linux-mips64.tar.gz  | tar xzvf - -C $(dirname $GOGHWRITE_BIN)
+  curl -Ls https://github.com/elsbrock/go-ghwrite/releases/latest/download/go-ghwrite_linux-$(uname -m).tar.gz  | tar xzvf - -C $(dirname $GOGHWRITE_BIN)
 fi
 
 if [ ! -x "$CONFHOOK" ];
