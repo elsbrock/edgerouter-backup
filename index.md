@@ -11,6 +11,7 @@ The tool uses a hook of EdgeOS to get triggered with each change to the configur
 ### Installing
 
 ```sh
+# open below's link in your browser to see what it does
 curl -sSL https://raw.githubusercontent.com/elsbrock/edgerouter-backup/master/install.sh | sh
 ```
 
