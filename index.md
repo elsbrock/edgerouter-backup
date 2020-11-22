@@ -14,7 +14,7 @@ The tool uses a hook of EdgeOS to get triggered with each change to the configur
 curl -sSL https://raw.githubusercontent.com/elsbrock/edgerouter-backup/master/install.sh | sh
 ```
 
-You will be prompted for the slug of the target repository (ie. the repository to which config changes should be written). You will also need to provide a personal access token that can be [created](https://github.com/settings/tokens) on Github. The token needs to have the `repo` scope.
+You will be prompted for the slug of the target repository (ie. the repository to which config changes should be written). You will also need to provide a personal access token to push the config. The token can be [created](https://github.com/settings/tokens) on Github and requires the `repo` scope.
 
 The files are installed into `/config/user-data` and therefore survives reboots and system upgrades.
 
