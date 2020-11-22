@@ -15,11 +15,13 @@ The tool gets triggered with each change to the configuration (be it via UI or C
 curl -sSL https://raw.githubusercontent.com/elsbrock/edgerouter-backup/master/install.sh | sh
 ```
 
-You will be prompted for the slug of the target repository (ie. the repository to which config changes should be written). You will also need to provide a personal access token to push the config. The token can be [created](https://github.com/settings/tokens) on Github. The `repo` is mandatory in order to allow writing to the repository. 
+You will be prompted for the slug of the target repository (ie. the repository to which config changes should be written).
 
 The files are installed into `/config/user-data` and therefore survive reboots and system upgrades.
 
-> **Beware:** it is not possible to restrict a personal access token to specific repositories, so it is quite powerful. The data will only be readable for the current user.
+You will also need to provide a personal access token to push the config. The token can be [created](https://github.com/settings/tokens) on Github. The `repo` scope is mandatory in order to allow writing to the repository. 
+
+> **Beware:** it is not possible to restrict a personal access token to specific repositories, so it is quite powerful. The token will be stored readable for the current user only.
 
 ### Compatibility
 
@@ -31,4 +33,4 @@ It should work on other Edgerouter models too, but this has not been tested. Ple
 
 ### Credits
 
-These scripts are originally based on [tbyehl/edgerouter-backup](https://github.com/tbyehl/edgerouter-backup). Compared to that project no external SSH host is required and instead the config is pushed directly to Github. It uses [`go-ghwrite`](https://github.com/elsbrock/go-ghwrite) under the hood.
+These scripts are originally based on [tbyehl/edgerouter-backup](https://github.com/tbyehl/edgerouter-backup). Compared to that project no external SSH host is required and instead the config is pushed directly to Github, using [`go-ghwrite`](https://github.com/elsbrock/go-ghwrite) under the hood.
