@@ -16,6 +16,8 @@ curl -sSL https://raw.githubusercontent.com/elsbrock/edgerouter-backup/master/in
 
 You will be prompted for the slug of the target repository (ie. the repository to which config changes should be written). You will also need to provide a personal access token that can be [created](https://github.com/settings/tokens) on Github. The token needs to have the `repo` scope.
 
+The files are installed into `/config/user-data` and therefore survives reboots and system upgrades.
+
 > **Beware:** it is not possible to restrict a personal access token to specific repositories, so it is quite powerful. The data will only be readable for the current user.
 
 ### Compatibility
