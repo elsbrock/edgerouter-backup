@@ -19,9 +19,9 @@ You will be prompted for the slug of the target repository (ie. the repository t
 
 You will also need to provide a personal access token to push the config. The token can be [created](https://github.com/settings/tokens) on Github. The `repo` scope is mandatory in order to allow writing to the repository. 
 
-The files are installed into `/config/user-data` and therefore survive reboots and system upgrades.
-
 > **Beware:** it is not possible to restrict a personal access token to specific repositories, so it is quite powerful. The token will be stored readable for the current user only.
+
+The files are installed into `/config/user-data` and therefore survive reboots and system upgrades.
 
 ### Compatibility
 
