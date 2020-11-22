@@ -28,4 +28,4 @@ It should work on other Edgerouter models too, but this has not been tested. Ple
 
 ### Credits
 
-These scripts are originally based on [tbyehl/edgerouter-backup](https://github.com/tbyehl/edgerouter-backup); this version gets rid of the `git` dependency and works with Github only. It uses [go-ghwrite](https://github.com/elsbrock/go-ghwrite) under the hood.
+These scripts are originally based on [tbyehl/edgerouter-backup](https://github.com/tbyehl/edgerouter-backup); this version does not relay via a permanently running SSH host and instead pushes directly to Github. It uses [go-ghwrite](https://github.com/elsbrock/go-ghwrite) under the hood.
