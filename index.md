@@ -28,6 +28,7 @@ The files are installed into `/config/user-data` and therefore survive reboots a
 The script was tested on the following devices:
 
 * Edgerouter ER-4
+* Edgerouter X-SFP
 
 It should work on other Edgerouter models too, but this has not been tested. Please [let me know](https://github.com/elsbrock/edgerouter-backup/edit/gh-pages/index.md) in case you were able to use it on another model and I will add it to this list.
 
